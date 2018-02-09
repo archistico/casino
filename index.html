@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>CASINO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"> 
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
+    </head>
+    <body>
+        <pre>
+     _             _     _     _   _           
+    / \   _ __ ___| |__ (_)___| |_(_) ___ ___  
+   / _ \ | '__/ __| '_ \| / __| __| |/ __/ _ \ 
+  / ___ \| | | (__| | | | \__ \ |_| | (_| (_) |
+ /_/   \_\_|  \___|_| |_|_|___/\__|_|\___\___/ 
+        </pre>
+        <pre>
+ ██████╗ █████╗ ███████╗██╗███╗   ██╗ ██████╗ 
+██╔════╝██╔══██╗██╔════╝██║████╗  ██║██╔═══██╗
+██║     ███████║███████╗██║██╔██╗ ██║██║   ██║
+██║     ██╔══██║╚════██║██║██║╚██╗██║██║   ██║
+╚██████╗██║  ██║███████║██║██║ ╚████║╚██████╔╝
+ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+        </pre>
+        <br>
+        <button id="tira" class="btn">TIRA</button>
+        <br>
+        <div id="wrapper">
+            <div id="c1">
+                <canvas id="grafico" width="300" height="200"></canvas>
+            </div>
+            <div id="c2">
+                <p>Il numero uscito &egrave;:</p>
+                <h1 id="numeroUscito">Tira...</h1>
+                <br>
+                <p>Rosso: <span id="rosso"></span></p>
+                <p>Nero : <span id="nero"></span></p>
+                <p>Zero : <span id="zero"></span></p>
+                <p>Pari : <span id="pari"></span></p>
+                <p>Dispari : <span id="dispari"></span></p>
+                <p>Manque : <span id="manque"></span></p>
+                <p>Passe : <span id="passe"></span></p>
+                <br>
+                <p>Totale tirati : <span id="totaletirati"></span></p>
+                <p>Zeri : <span id="p_zeri"></span>%</p>
+                <p>Rossi : <span id="p_rossi"></span>%</p>
+                <p>Neri : <span id="p_neri"></span>%</p>
+            </div>
+            <div id="c3">
+                <table id="listaUsciti">
+                  <tr>
+                    <th>Rosso</th>
+                    <th>Zero</th>
+                    <th>Nero</th>
+                    <th>Colore</th>
+                    <th>Pari/dispari</th>
+                    <th>Manque/passe</th>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <script src="js/casino.js"></script>
+    </body>
+</html>

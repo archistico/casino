@@ -1,0 +1,89 @@
+html {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#wrapper{
+    display:-webkit-flex;
+    -webkit-justify-content:center;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+#wrapper div{
+    -webkit-flex:1;
+    flex:1;
+    /* border:thin solid #777; */
+
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+table, th, td {
+    border: 1px solid #222;
+    padding: 5px;
+    margin: 1px;
+}
+
+table#listaUsciti tr:nth-child(even) {
+    background-color: #eee;
+}
+table#listaUsciti tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#listaUsciti th {
+    background-color: black;
+    color: white;
+}
+
+table#listaUsciti td {
+    text-align: center;
+}
+
+table#listaUsciti tr:nth-child(even) {
+    background-color: #eee;
+}
+table#listaUsciti tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#listaUsciti th {
+    background-color: #333;
+    color: white;
+}
